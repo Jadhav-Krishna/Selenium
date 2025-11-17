@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 public class ProductsPage extends BasePage {
     private By productHeader = By.xpath("//span[text()='Products']");
 
-    public boolean isProductheaderDisplyed(){
+    public boolean isProductHeaderDisplyed(){
         return find(productHeader).isDisplayed();
     }
 
