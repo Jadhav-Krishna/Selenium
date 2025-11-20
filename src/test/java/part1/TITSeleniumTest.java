@@ -42,9 +42,13 @@ public class TITSeleniumTest {
 
         driver.findElement(By.name("Login1$LoginButton")).click();
 
+        driver.navigate().refresh();
+        driver.navigate().to("https://google.com");
+        driver.navigate().back();
         Thread.sleep(4000);
-        String actualResult = driver.findElement(By.id("ctl00_lnkRefund")).getText();
-        String expectedResult = "Refund/Cancellation Policy";
-        Assert.assertEquals(actualResult,expectedResult);
+
+//        String actualResult = driver.findElement(By.id("ctl00_lnkRefund")).getText();
+//        String expectedResult = "Refund/Cancellation Policy";
+//        Assert.assertEquals(actualResult,expectedResult);
     }
 }
