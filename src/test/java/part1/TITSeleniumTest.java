@@ -47,8 +47,8 @@ public class TITSeleniumTest {
         driver.navigate().back();
         Thread.sleep(4000);
 
-//        String actualResult = driver.findElement(By.id("ctl00_lnkRefund")).getText();
-//        String expectedResult = "Refund/Cancellation Policy";
-//        Assert.assertEquals(actualResult,expectedResult);
+        String actualResult = driver.findElement(By.id("ctl00_lnkRefund")).getText();
+        String expectedResult = "Refund/Cancellation Policy";
+        Assert.assertEquals(actualResult,expectedResult);
     }
 }
