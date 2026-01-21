@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+*{
+   background-color : lightblue;
+}
+
+body{
+   color : maroon;
+}
+#p1{
+  background-color : beige;
+  color : black;
+  font-weight: bold;
+  text-align : right;
+  text-transform : uppercase;
+}
+#p2{
+  background-color : beige;
+  color : black;
+  font-weight: bold;
+  text-align : justify;
+}
+
+a{
+ color : brown;
+}
+
+a:visited{
+ color : red;
+}
+
+a:hover{
+ color : green;
+}
+
+a:active{
+ color : blue;
+}
+
+</style>
+    <title>All HTML Form Elements</title>
+</head>
+<body>
+
+<h2> iframe example </h2>
+<iframe 
+  src="https://en.wikipedia.org/wiki/HTML"
+  width="700"
+  height="400"
+  title="Wikipedia HTML Page">
+</iframe>
+
+<h2>HTML Form with All Tags</h2>
+
+<a href="https://www.google.com/"> Google </a>
+
+<p id="p1"> ioskdjqeifj jdjasda djadbauia  iwbfiuwbifajsfns jajsbjab j sasibusnio  90i 0saiiod diw duh dia ioan saijc  f fioasjkoi 0wiwjf ioi joks cka siajsoi jos jkos ioajsio asjs ijus90 uiofjwoijf i jf90i opajkoa j asioij ioas 9i90uf90e fuif e f9 fu90a f90as fu90af 9 </p>
+
+<p id="p2"> ioskdjqeifj jdjasda djadbauia  iwbfiuwbifajsfns jajsbjab j sasibusnio  90i 0saiiod diw duh dia ioan saijc  f fioasjkoi 0wiwjf ioi joks cka siajsoi jos jkos ioajsio asjs ijus90 uiofjwoijf i jf90i opajkoa j asioij ioas 9i90uf90e fuif e f9 fu90a f90as fu90af 9 </p>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+    <label>Text:</label>
+    <input type="text" name="text"><br><br>
+
+    <label>Password:</label>
+    <input type="password" name="password"><br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email"><br><br>
+
+    <label>Number:</label>
+    <input type="number" name="number"><br><br>
+
+    <label>Search:</label>
+    <input type="search" name="search"><br><br>
+
+    <label>URL:</label>
+    <input type="url" name="url"><br><br>
+
+    <label>Telephone:</label>
+    <input type="tel" name="phone"><br><br>
+
+    <label>Date:</label>
+    <input type="date" name="date"><br><br>
+
+    <label>Time:</label>
+    <input type="time" name="time"><br><br>
+
+    <label>Date & Time:</label>
+    <input type="datetime-local" name="datetime"><br><br>
+
+    <label>Month:</label>
+    <input type="month" name="month"><br><br>
+
+    <label>Week:</label>
+    <input type="week" name="week"><br><br>
+
+    <label>Radio:</label>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female<br><br>
+
+    <label>Checkbox:</label>
+    <input type="checkbox" name="skill" value="java"> Java
+    <input type="checkbox" name="skill" value="python"> Python<br><br>
+
+    <label>Select:</label>
+    <select name="city">
+        <option value="">--Select--</option>
+        <option value="pune">Pune</option>
+        <option value="mumbai">Mumbai</option>
+    </select><br><br>
+
+    <label>Optgroup:</label>
+    <select name="course">
+        <optgroup label="Backend">
+            <option>Java</option>
+            <option>Python</option>
+        </optgroup>
+        <optgroup label="Frontend">
+            <option>HTML</option>
+            <option>React</option>
+        </optgroup>
+    </select><br><br>
+
+    <label>Textarea:</label><br>
+    <textarea name="message" rows="4" cols="30" resize="none" ></textarea><br><br>
+
+    <label>File:</label>
+    <input type="file" name="file"><br><br>
+
+    <label>Range:</label>
+    <input type="range" name="range" min="0" max="100"><br><br>
+
+    <label>Color:</label>
+    <input type="color" name="color"><br><br>
+
+    <input type="hidden" name="hiddenValue" value="12345">
+
+    <label>Readonly:</label>
+    <input type="text" value="Readonly Text" readonly><br><br>
+
+    <label>Disabled:</label>
+    <input type="text" value="Disabled Text" disabled><br><br>
+
+    <label>Datalist:</label>
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Edge">
+    </datalist><br><br>
+
+    <fieldset>
+        <legend>Personal Info</legend>
+        <label>Name:</label>
+        <input type="text"><br><br>
+        <label>Age:</label>
+        <input type="number">
+    </fieldset><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    <input type="button" value="Button">
+    <input type="submit" value="Submit Input">
+
+</form>
+</body>
+</html>
