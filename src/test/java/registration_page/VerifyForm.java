@@ -1,13 +1,13 @@
 package registration_page;
 
+import org.testng.annotations.Test;
+
 public class VerifyForm extends BaseTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void verifyRegistrationForm() {
 
-        VerifyForm test = new VerifyForm();
-        test.launchApp();
-
-        FormPage form = new FormPage(test.driver);
+        FormPage form = new FormPage(driver);
 
         form.handleIframe();
         form.fillForm();
@@ -16,7 +16,5 @@ public class VerifyForm extends BaseTest {
         form.fillTextarea();
         form.handleExtras();
         form.submitForm();
-
-        test.closeApp();
     }
 }

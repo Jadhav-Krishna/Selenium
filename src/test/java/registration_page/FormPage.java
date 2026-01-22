@@ -128,7 +128,7 @@ public class FormPage {
     public void fillTextarea() {
         message.sendKeys("Testing all HTML form elements using Selenium POM");
     }
-
+    
     public void handleExtras() {
         browser.sendKeys("Chrome");
 
