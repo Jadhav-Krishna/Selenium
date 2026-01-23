@@ -28,7 +28,7 @@ public class FirstSeleniumTest {
 //        driver.close();
     }
 
-    @Test
+    @Test(priority = 1)
     public void testLoggingIntoApplication() throws InterruptedException {
         Thread.sleep(4000);
 
@@ -43,6 +43,29 @@ public class FirstSeleniumTest {
         Thread.sleep(4000);
         String actualResult = driver.findElement(By.tagName("h6")).getText();
         String expectedResult = "Dashboard";
-        Assert.assertEquals(actualResult,expectedResult);
+        Assert.assertEquals(actualResult,expectedResult,"Dashboard page is not displayed");
     }
+    
+    @Test(priority = 2)
+    public void testLoggingOutOfApplication() throws InterruptedException {
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//p[@class='oxd-userdropdown-name']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.linkText("Logout")).click();
+
+		Thread.sleep(4000);
+		String actualResult = driver.findElement(By.tagName("h5")).getText();
+		String expectedResult = "Login";
+		Assert.assertEquals(actualResult,expectedResult,"Login page is not displayed");
+	}
+    
+    @Test(priority = 3)
+    public void testLoginPageTitle() {
+		String actualTitle = driver.getTitle();
+		String expectedTitle = "OrangeHRM";
+		Assert.assertNotEquals(actualTitle, expectedTitle, "Page title is not as expected");
+	}
 }
+
+//@Dataprovider(name = "loginData");
+//@BeforeMethod
