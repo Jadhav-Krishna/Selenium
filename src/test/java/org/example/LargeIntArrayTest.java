@@ -16,7 +16,7 @@ public class LargeIntArrayTest {
 	public void testLargestIntNormalArray() {
 		int[] arr = {10,25,5,40,15};
 		int result = largest.FindLargest(arr);
-		Assert.assertEquals(40,40);
+		Assert.assertEquals(result,40);
 	}
 	
 	@Test
