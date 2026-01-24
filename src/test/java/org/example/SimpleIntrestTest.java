@@ -9,7 +9,6 @@ public class SimpleIntrestTest {
     public void testCalculateSI_happyPath() {
         SimpleIntrest si = new SimpleIntrest();
         double result = si.calculateSI(1000.0, 5.0, 2.0);
-        // (1000 * 5 * 5) / 100 = 250.0
         Assert.assertEquals(result, 250.0, 1e-9, "Simple interest calculation should match expected value");
     }
 
