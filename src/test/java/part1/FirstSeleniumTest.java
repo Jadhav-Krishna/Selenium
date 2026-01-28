@@ -63,7 +63,7 @@ public class FirstSeleniumTest {
     public void testLoginPageTitle() {
 		String actualTitle = driver.getTitle();
 		String expectedTitle = "OrangeHRM";
-		Assert.assertNotEquals(actualTitle, expectedTitle, "Page title is not as expected");
+		Assert.assertEquals(actualTitle, expectedTitle, "Page title is not as expected");
 	}
 }
 

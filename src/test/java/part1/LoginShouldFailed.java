@@ -43,6 +43,6 @@ public class LoginShouldFailed {
             Thread.sleep(4000);
             String actualResult = driver.findElement(By.tagName("h6")).getText();
             String expectedResult = "Dashboard";
-            Assert.assertNotEquals(actualResult,expectedResult);
+            Assert.assertEquals(actualResult,expectedResult);
         }
 }

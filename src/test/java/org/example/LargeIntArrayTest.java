@@ -25,7 +25,7 @@ public class LargeIntArrayTest {
 		Assert.assertEquals(largest.FindLargest(arr),-5);
 	}
 	
-	@Test
+	@Test(expectedExceptions = IllegalArgumentException.class)
 	public void testLargestIntEmptyArray() {
 		int[] arr = {};
 		largest.FindLargest(arr);
