@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Test Suite"
+       parallel="classes"
+       thread-count="5">
+
+    <listeners>
+        <listener class-name="utils.ExtentTestListener"/>
+    </listeners>
+
+    <test name="Regression Tests">
+
+        <classes>
+            <class name="org.example.SimpleIntrestTest"/>
+            <class name="org.example.LargeIntArrayTest"/>
+
+            <class name="part1.FirstSeleniumTest"/>
+            <class name="part1.LoginShouldFailed"/>
+
+            <class name="part2.com.saucedemo.tests.login.LoginTest"/>
+            <class name="registration_page.VerifyForm"/>
+            <class name="tests.LoginTest"/>
+        </classes>
+
+    </test>
+
+</suite>
